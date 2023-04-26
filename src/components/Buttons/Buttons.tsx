@@ -1,7 +1,18 @@
-import React from "react";
+import "../../css/Main.scss";
 
-function Buttons() {
-  return <div>Buttons</div>;
+interface ButtonProps {
+  main?: boolean;
+  type: "submit" | "button" | "reset";
+  children: string;
+  disabled?: boolean;
 }
 
-export default Buttons;
+function Button({ main, type, children, disabled }: ButtonProps): JSX.Element {
+  return (
+    <button type={type} disabled={disabled} className={`${main && "main"}`}>
+      {children}
+    </button>
+  );
+}
+
+export default Button;

@@ -7,7 +7,8 @@ $Very-dark-violet: hsl(278, 68%, 11%);
 
 $Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%); //active input border
 $Red: hsl(0, 100%, 66%); //input errors
-$Font-size: 24px;
+$Font-size: 18px;
+$Medium-radius: 8px;
 * {
   padding: 0;
   margin: 0;
@@ -30,5 +31,5 @@ body {
   font-weight: 500;
   line-height: 1.6;
   overflow-x: hidden;
-  font-size: 1.6rem;
+  font-size: $Font-size;
 }

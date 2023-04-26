@@ -1,0 +1,18 @@
+.card-back-face {
+  position: relative;
+  margin-right: -22.35rem;
+  width: 44.7rem;
+  height: 24.5rem;
+  display: flex;
+  &__img {
+    position: absolute;
+  }
+  .text {
+    z-index: 1;
+    position: absolute;
+    top: 10.7rem;
+    right: 5rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+}
